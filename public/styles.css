@@ -1,0 +1,335 @@
+body {
+  padding: 20px;
+  background-color: #212121;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white; /* Set text color to white */
+}
+
+.curved-navbar {
+  border-radius: 25px; /* Adjust the border radius as needed */
+  background-color: #151515; /* Set the background color to black */
+  box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+.curved-navbar::before {
+  background-color: #151515; /* Set low opacity black */  
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+.container {
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #151515;
+  justify-content: center;  
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  
+}
+
+.container::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  bottom: 0;
+  width: 160px;
+  height: 160%;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 10px;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.container-content {
+  background-color: #151515;
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contside {
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #151515;
+  justify-content: center;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+.contside::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  bottom: 0;
+  width: 160px;
+  height: 160%;
+  background-color: #151515; /* Set low opacity black */  
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.contside-content {
+  background-color: #151515;
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 {
+  color: white; /* Set heading color to white */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+label {
+  
+  color: #FFF;
+  border-radius: 100px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  
+}
+
+.centered-textarea {
+  color: white; /* Set textarea color to white */
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+  resize: none;
+}
+
+.btn-primary {
+  background-color: #212121;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0), 0 0 20px rgba(0, 0, 0, 0), 0 0 30px rgba(0, 0, 0, 0);
+}
+
+.btn-primary:hover {
+  background-color: ;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #151515;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #FFF;
+  margin-top: 10px;
+  border-top: 1px solid #blue;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+.footer p {
+  margin: 0;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.container-buttons {
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+.container-buttons .btn {
+  margin: 5px;
+}
+
+#result {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.center-placeholder::placeholder {
+  text-align: center;
+  
+}
+
+.form-check {
+  display: flex;
+  margin-top: 10px;
+  padding: 14px;
+  align-items: center;
+  border: 1px solid #red;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-color: #ccc;
+  background-color: #151515;
+}
+
+.form-check:hover {
+  background-color: #212121;
+  border-color: #f8f8f8;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+.form-check-input {
+  background-color: #212121;
+  background-color: lightgreen;
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+.disable {
+  display: none;
+}
+
+#inputOfPrefix,
+#inputOfAdmin {
+  padding: 13px;
+  width: 200px;
+  color: #151515;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-color: #ccc;
+  background-color: #212121;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+#listOfCommands,
+#listOfCommandsEvent,
+#prefixOfCommands,
+#adminOfCommands {
+  border: none !important;
+  
+}
+
+#listOfCommands:not(.modal),
+#listOfCommandsEvent:not(.modal),
+#prefixOfCommands:not(.modal),
+#adminOfCommands:not(.modal) {
+  box-shadow: none !important;
+  background-color: #151515;
+}
+
+div {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  animation: neon-border 1.5s infinite alternate; /* Apply the animation to every div */  x;
+}
+
+@keyframes neon-border {
+  from {
+    border-color: #ff0000; /* Start color */
+     /* Adjust shadow colors and sizes */ 
+  }
+ 
+  to {
+    border-color: #00ff00; /* End color
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2), 0 0 60px rgba(0, 0, 0, 0.2); /* Adjust shadow colors and sizes */
+  }
+}
+
+.boxshadow {
+    box-shadow: 0px 0px 10px 1px #000000ee;
+}
+
+.neon-border {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: transparent; /* Transparent background */
+  border: 0.5px solid #ff9933; /* Neon orange border */
+  border-radius: 10px;
+  animation: glowing-border 1.5s infinite alternate;
+  box-shadow: 0px 0px 10px 1px #000000ee
+}
+
+@keyframes glowing-border {
+  0% {
+    border-color: #ff7300; /* Neon orange border color */
+  }
+  50% {
+    border-color: transparent; /* Transparent border color */
+  }
+  100% {
+    border-color: #ff7300; /* Neon orange border color */
+  }
+}
+
+
+
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.neon-border::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(var(--clr), transparent);
+  animation: animate 1.5s linear infinite;
+}
+
+.neon-border::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: rgba(45, 45, 45, 0.9);
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-150px, -150px);
+  }
+  25% {
+    transform: translate(0px, -150px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(-150px, 0px);
+  }
+  100% {
+    transform: translate(-150px, -150px);
+  }
+}
