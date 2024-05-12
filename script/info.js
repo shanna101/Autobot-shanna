@@ -25,8 +25,8 @@ module.exports.run = async function({ api, event, args }) {
 		const uptimeString = `${years > 0 ? `${years} years ` : ''}${months > 0 ? `${months} months ` : ''}${weeks > 0 ? `${weeks} weeks ` : ''}${days % 7 > 0 ? `${days % 7} days ` : ''}${hours > 0 ? `${hours} hours ` : ''}${minutes > 0 ? `${minutes} minutes ` : ''}${seconds} seconds`;
 
 		const prefix = "+";
-		const CREATORLINK = "https://www.facebook.com/61550264923277";
-		const BOTCREATOR = "AJ CHICANO";
+		const CREATORLINK = "https://www.facebook.com/100061646055224";
+		const BOTCREATOR = "Ash Ash";
 		const BOTNAME = "BOTIBOT";
 		const FILESOWNER = "";
 		const juswa = moment.tz("Asia/Manila").format("『D/MM/YYYY』 【HH:mm:ss】");
