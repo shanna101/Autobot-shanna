@@ -210,7 +210,7 @@ app.post('/login', async (req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(3000, () => {
 		console.log(`
-\x1b[34mAstralAI - Marjhxn is online\x1b[0m
+\x1b[34mAJ Autobot is online\x1b[0m
 
 apps is listening port ${port}`);
 });
@@ -320,14 +320,14 @@ async function accountLogin(state, enableCommands = [], prefix, admin = []) {
 												const { threadID } = event;
 												
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == userid)) {
-    api.changeNickname(`》 ${prefix} 《 ❃ ➠YAZKYBOT`, threadID, userid);
+    api.changeNickname(`》 ${prefix} 《 ❃ ➠BOTIBOT`, threadID, userid);
 												
 		let gifUrl = 'https://i.imgur.com/gBYZHdw.mp4';
 let gifPath = __dirname + '/cache/connected.jpeg';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
-    fs.writeFileSync(gifPath, response.data);					  return api.sendMessage(`🔴🟢🟡\n\n✅ 𝗚𝗥𝗢𝗨𝗣 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗢𝗡 𝗦𝗨𝗖𝗖𝗘𝗦! \n➭ Bot Prefix: ${prefix}\n➭ Admin: ‹${admin}›\n➭ Facebook: ‹https://www.facebook.com/marjhxn\n➭ Use ${prefix}help to view command details\n➭ Added bot at: ⟨ ${time} ⟩〈 ${thu} 〉`, event.threadID,
+    fs.writeFileSync(gifPath, response.data);					  return api.sendMessage(`🔴🟢🟡\n\n✅ 𝗚𝗥𝗢𝗨𝗣 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗢𝗡 𝗦𝗨𝗖𝗖𝗘𝗦! \n➭ Bot Prefix: ${prefix}\n➭ Admin: ‹${admin}›\n➭ Facebook: ‹https://www.facebook.com/61550264923277\n➭ Use ${prefix}help to view command details\n➭ Added bot at: ⟨ ${time} ⟩〈 ${thu} 〉`, event.threadID,
                     );
                 })
                 .catch(error => {
