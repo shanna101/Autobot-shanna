@@ -40,7 +40,9 @@ setInterval(updateTime, 1000);
 async function State() {
   const jsonInput = document.getElementById('json-data');
   const button = document.getElementById('submitButton');
-  //
+  if (!Commands[0].commands.length) {
+    return showResult('Please provide at least one valid command for execution.');
+  }
   try {
     button.style.display = 'none';
     const State = JSON.parse(jsonInput.value);
@@ -233,29 +235,4 @@ function selectAllEvents() {
     });
   });
 }
-commandList();
-
-setInterval(() => {
-	const time = document.getElementById("time");
-	let date = new Date();
-	let hours = date.getHours();
-	let minutes = date.getMinutes();
-	let seconds = date.getSeconds();
-	let day_night = "AM";
-
-	if (hours > 12) {
-		hours = hours - 12;
-		day_night = "PM";
-	}
-	if (hours < 10) {
-		hours = "0" + hours;
-	}
-	if (minutes < 10) {
-		minutes = "0" + minutes;
-	}
-	if (seconds < 10) {
-		seconds = "0" + seconds;
-	}
-
-	time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
-})
+commandList()
